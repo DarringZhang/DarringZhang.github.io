@@ -86,12 +86,13 @@
 <meta property="og:site_name" content="Darring&#39;blog">
 <meta property="og:description" content="碎碎念 好不容易将自己的博客搭了两遍终于搭起来了，为什么这么多坑？？我枯了，按着别人的步骤一步一步走还这么困难，我也是菜中菜了T_T.虽然域名还带有github，但来日我一定换个超级酷炫狂拽吊炸天的域名哈哈哈。  还是那句话:“为什么别人都没出问题？就我有这么多bug?”   &quot;因为我脑回路清奇总想搞事情~哈哈&quot;      我在博客中“尽量”会写一些学习相关的文章，对自己的学习有一个条理化记录和复">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/006QE5Mmly1g3usgqfja3j30mo0c70tq.jpg">
 <meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006QE5Mmly1g3u7l73pezj30e80e8wfq.jpg">
-<meta property="og:updated_time" content="2019-06-09T03:52:55.790Z">
+<meta property="og:updated_time" content="2019-06-09T05:00:24.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建博客遇到的坑T_T">
 <meta name="twitter:description" content="碎碎念 好不容易将自己的博客搭了两遍终于搭起来了，为什么这么多坑？？我枯了，按着别人的步骤一步一步走还这么困难，我也是菜中菜了T_T.虽然域名还带有github，但来日我一定换个超级酷炫狂拽吊炸天的域名哈哈哈。  还是那句话:“为什么别人都没出问题？就我有这么多bug?”   &quot;因为我脑回路清奇总想搞事情~哈哈&quot;      我在博客中“尽量”会写一些学习相关的文章，对自己的学习有一个条理化记录和复">
-<meta name="twitter:image" content="http://wx1.sinaimg.cn/mw690/006QE5Mmly1g3u7l73pezj30e80e8wfq.jpg">
+<meta name="twitter:image" content="http://wx4.sinaimg.cn/mw690/006QE5Mmly1g3usgqfja3j30mo0c70tq.jpg">
 
 
 
@@ -346,18 +347,62 @@
 <hr>
 </li>
 </ul>
-<h3 id="主要参考"><a href="#主要参考" class="headerlink" title="主要参考"></a>主要参考</h3><p>  <a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26625249</a> <br><br>  <a href="https://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="noopener">https://www.jianshu.com/p/c2ba9533088a</a><br>  </p><p>以及递归百度（google）无数CSDN ，简书，博客园，Stack Overflow……T_T</p><p></p>
+<h3 id="主要参考"><a href="#主要参考" class="headerlink" title="主要参考"></a>主要参考</h3><p>  <a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26625249</a> <br><br>  <a href="https://blog.csdn.net/qq_38148394/article/details/79997971" target="_blank" rel="noopener">https://blog.csdn.net/qq_38148394/article/details/79997971</a><br>  </p><p>以及递归百度（google）无数CSDN ，简书，博客园，Stack Overflow……T_T</p><p></p>
 <hr>
 <h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><ul>
 <li><p>坑1</p>
 <blockquote>
-<p>在blog文件夹中打开命令行时如下图1</p>
+<p>注意hexo命令操作的位置，在blog目录下按住shift键右击鼠标打开命令行，位置如下图</p>
 </blockquote>
-<p><img src="http://wx1.sinaimg.cn/mw690/006QE5Mmly1g3u7l73pezj30e80e8wfq.jpg" alt="logo"></p>
+<blockquote>
+<blockquote>
+<p><img src="http://wx4.sinaimg.cn/mw690/006QE5Mmly1g3usgqfja3j30mo0c70tq.jpg" alt="logo"><br><br><br><br>就是这个问题,导致我在浏览器上输入localhost:4000时界面无法响应<br><br>搜索结果中有以下情况：</p>
+<blockquote>
+<ul>
+<li>4000端口被占用<br></li>
+<li>控制面板—打开或关闭windows功能——找到Internet information services 未勾选<br></li>
+<li>素质三连没有到位（hexo clean, hexo g,hexo d）尤其不要忘了第一个clean ，还要注意如下提示，即使没有红色提示，命令执行结果也不一定是对的（我之前就被这个误导了好久，以为没有报错）</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p><code>Commands:
+ clean     Remove generated files and cache.  config    Get or set configurations.  deploy   
+  Deploy your website.  generate  Generate static files.  help      Get help on a command.  init      Create a new Hexo folder.  list    
+  List the information of the site  migrate   Migrate your site from other system to Hexo.  new       Create a new post.  publish   Moves a draft post from _drafts to _posts folder.  render    Render files with renderer plugins.  server    Start the server.  version   Display version information.
+Global Options:
+ --config  Specify config file instead of using _config.yml  --cwd     Specify the CWD  --debug   Display all verbose messages in the terminal  --draft   Display draft posts  --safe    Disable all plugins and scripts  --silent  Hide output on console</code><br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>和我情况一样，工作区搞错了地方</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+<li><p>坑2</p>
+<blockquote>
+<p>部署好博客后，那篇知乎的文章，说是在浏览器中直接输入darringzhang.github.io,而没有前面的https，2019年6月9日12:56:19证明，<br>https是要加上的</p>
+</blockquote>
+</li>
+<li><p>坑3</p>
+<blockquote>
+<p>建议初学就暂时用github 的域名，以后再迁移到自己的服务器或者云服务器中用自己的域名。（昨天晚上还研究了好久怎么搞个好听的域名，最后放弃了）</p>
+</blockquote>
+</li>
+<li><p>坑</p>
 </li>
 </ul>
 <hr>
-<h3 id="快速联系我-：）"><a href="#快速联系我-：）" class="headerlink" title="快速联系我 ：）"></a>快速联系我 ：）</h3><p>  <a href="http://wx1.sinaimg.cn/mw690/006QE5Mmly1g3u7l73pezj30e80e8wfq.jpg" target="_blank" rel="noopener">Wechat Two-Dimensional Code</a></p>
+<h3 id="微信快速联系我-：）"><a href="#微信快速联系我-：）" class="headerlink" title="微信快速联系我 ：）"></a>微信快速联系我 ：）</h3><p>  <img src="http://wx1.sinaimg.cn/mw690/006QE5Mmly1g3u7l73pezj30e80e8wfq.jpg" alt="logo"></p>
 
       
     </div>
@@ -504,7 +549,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#碎碎念"><span class="nav-number">1.</span> <span class="nav-text">碎碎念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要参考"><span class="nav-number">2.</span> <span class="nav-text">主要参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正文"><span class="nav-number">3.</span> <span class="nav-text">正文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速联系我-：）"><span class="nav-number">4.</span> <span class="nav-text">快速联系我 ：）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#碎碎念"><span class="nav-number">1.</span> <span class="nav-text">碎碎念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要参考"><span class="nav-number">2.</span> <span class="nav-text">主要参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正文"><span class="nav-number">3.</span> <span class="nav-text">正文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微信快速联系我-：）"><span class="nav-number">4.</span> <span class="nav-text">微信快速联系我 ：）</span></a></li></ol></div>
             
 
           </div>
