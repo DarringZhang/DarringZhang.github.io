@@ -334,7 +334,7 @@
         
           
             <h3 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h3><ul>
-<li><p>好不容易将自己的博客搭了两遍终于搭起来了，为什么这么多坑？？我枯了，按着别人的步骤一步一步走还这么困难，我也是菜中菜了T_T.<br><br>虽然域名还带有github，但来日我一定换个超级酷炫狂拽吊炸天的域名哈哈哈。</p>
+<li><p>好不容易将自己的博客搭了两遍，终于搭起来了，为什么这么多坑？？我枯了，按着别人的步骤一步一步走还这么困难，我也是菜中菜了T_T.<br><br>虽然域名还带有github，但来日我一定换个超级酷炫狂拽吊炸天的域名哈哈哈。</p>
  <p>还是那句话:“为什么别人都没出问题？就我有这么多bug?”</p>
  <p> "因为我脑回路清奇总想搞事情~哈哈"</p>
 
@@ -342,7 +342,7 @@
 </li>
 </ul>
 <ul>
-<li><p>我在博客中“尽量”会写一些学习相关的文章，对自己的学习有一个条理化记录和复盘总结，维护一个blog能让我更爱学习？（并不）。同时大家也能看到，监督我顺便给我找错（找错然后在微信中报给我，有神秘奖品哦~）<br>话不多说，让我们迈出神圣的第一步吧！</p>
+<li><p>我在博客中“尽量”会写一些学习相关的文章，对自己的学习有一个条理化记录和复盘总结，维护一个blog能让我更爱学习？（并不）。同时大家也能看到，监督我顺便给我找错（找错然后在微信中报给我，不胜感激~）<br>话不多说，让我们迈出神圣的第一步吧！</p>
 <br>
 
 <hr>
@@ -362,7 +362,7 @@
 <ul>
 <li>4000端口被占用<br></li>
 <li>控制面板—打开或关闭windows功能——找到Internet information services 未勾选<br></li>
-<li>素质三连没有到位（hexo clean, hexo g,hexo d）尤其不要忘了第一个clean ，还要注意如下提示，即使没有红色提示，命令执行结果也不一定是对的（我之前就被这个误导了好久，以为没有报错）</li>
+<li>素质三连没有到位（hexo clean, hexo g,hexo d）尤其不要忘了第一个clean ，还要注意如下提示，即使没有红色提示，命令执行结果也不一定是对的（我之前就被这个误导了好久，以为没有报错），正确提示应该是很长一大串提示语句，而不是下面这个</li>
 </ul>
 </blockquote>
 </blockquote>
@@ -391,7 +391,7 @@ Global Options:
 </li>
 <li><p>坑2</p>
 <blockquote>
-<p>部署好博客后，那篇知乎的文章，说是在浏览器中直接输入darringzhang.github.io,而没有前面的https，2019年6月9日12:56:19证明，<br>https是要加上的</p>
+<p>部署好博客后，那篇知乎的文章，说是在浏览器中直接输入username.github.io(username是你取好的名字)，而没有前面的https，实践证明，https是要加上的</p>
 </blockquote>
 </li>
 <li><p>坑3</p>
@@ -399,10 +399,50 @@ Global Options:
 <p>建议初学就暂时用github 的域名，以后再迁移到自己的服务器或者云服务器中用自己的域名。（昨天晚上还研究了好久怎么搞个好听的域名，最后放弃了）</p>
 </blockquote>
 </li>
-<li><p>坑</p>
+<li><p>坑4 </p>
+<blockquote>
+<p>注意markdown 语法的小坑，“###”和“*” 与后面的内容间要有一个空格，否则网页没法解析</p>
+</blockquote>
+<ul>
+<li><p>坑5 本地在localhost 上css上渲染得很好，但是在<a href="https://darringzhang.github.io上没正常显示,修改**站点的**配置文件_config.yml，再重新素质三连" target="_blank" rel="noopener">https://darringzhang.github.io上没正常显示,修改**站点的**配置文件_config.yml，再重新素质三连</a></p>
+<blockquote>
+<blockquote>
+<p><img src="http://wx1.sinaimg.cn/mw690/006QE5Mmly1g3utthpwuoj30sn06kdgd.jpg" alt="logo"></p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>坑6 hexo g提交时报错<br></p>
+<blockquote>
+<p><code>YAMLException: end of the stream or a document separator is expected at line x, column y:</code><br>这种情况一般是缺少分隔符，一般是空格，注意一定要在 ：后面加空格</p>
+</blockquote>
+</li>
+<li><p>坑7 </p>
+<blockquote>
+<p>本次最搞我的地方就是插入图片，研究了两个小时终于找到一个可行的方案，在“主要参考”里面的第二个链接，我暂时用的微博相册的图床，七牛云的审批还没下来。<br><br>刚才看到可以在本地上传图片，感觉很方便，但是我没有成功，博客上图片总是显示不出来，图片报错<code>The document appears to be corrupted and cannot be loaded</code>。链接在下面，你们也可以试一下<br></p>
+<blockquote>
+<p><a href="https://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="noopener">https://www.jianshu.com/p/c2ba9533088a</a> <br></p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
 </li>
 </ul>
 <hr>
+<h3 id="与君共勉"><a href="#与君共勉" class="headerlink" title="与君共勉"></a>与君共勉</h3><blockquote>
+<p>由于太我小白了，这个网站整整搭了一天，几次要在放弃的边缘试探，不过总算成功了……</p>
+<blockquote>
+<p>以下是过程中的一点心得：</p>
+<blockquote>
+<ul>
+<li>工欲善其事必先利其器，我开始竟然用记事本编辑配置文件_config.yml，找个信息找半天。直到在WebStorm 上打开了项目文件……当事人就是非常后悔</li>
+<li>每个人做事的逻辑不一样，可能在别人那儿没问题，到你就有问题了。和参考资料描述的情况不一致，不要心乱</li>
+<li>用到什么就学什么，不要觉得都准备好了才能开始动手（没有针对性，学了也会忘），搭这个博客之前，我还不会markdown，现在现学现卖</li>
+<li>说到底还是坚持，遇到很多的问题，中间好几次心态炸了，昨天晚上到现在我在Google的搜索记录已经好几百条了。不会不懂就去查资料，细心分析，问题是一个一个解决的</li>
+<li>第一次搭博客，还存在很多不完善的地方，上面列举出来我的一些心得，有任何问题请联系我。来日方长，与君共勉~</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
 <h3 id="微信快速联系我-：）"><a href="#微信快速联系我-：）" class="headerlink" title="微信快速联系我 ：）"></a>微信快速联系我 ：）</h3><p>  <img src="http://wx1.sinaimg.cn/mw690/006QE5Mmly1g3u7l73pezj30e80e8wfq.jpg" alt="logo"></p>
 
           
